@@ -16,7 +16,7 @@ If there are no walls present in the world, your function should return None.
 3
 ```
 
-#Task 2: Making a move (3 marks)
+# Task 2: Making a move (3 marks)
 
  We now need to allow the Vacuuminator to move around the world. Write a function make_move(world, direction). The direction may be one of 'u', 'd', 'l', or 'r' as described on the Background slide. Your function return a list of lists representing the world after the move has been made.
 
@@ -37,7 +37,7 @@ If an impossible move is requested, the Vacuuminator should not attempt to make 
 
 ```
 
-#Task 3: Finding Dirt (4 marks)
+# Task 3: Finding Dirt (4 marks)
 In the previous questions we assumed the Vacuuminator had a perfect knowledge of the world around it. In practice, mobile robots need to rely on sensors to find out information about the world. In this question we assume that the Vacuuminator has exactly four sensors:
 
 * A 'left sensor' which will identify the nearest dirty square immediately to the left of the Vacuuminator (i.e. in the same row with a lower index position).
@@ -59,7 +59,7 @@ The Vaccumunator stays at its position when scanning, then goes straight to the 
 
 If no dirt can be detected, your function should return an empty list.
 
-#Task 4 Cleaning all the dirt located(5 marks)
+# Task 4 Cleaning all the dirt located(5 marks)
 
 We now wish to produce a sequence of moves to clean all of the dirt the Vacuuminator can find, and then return the Vacuuminator to its starting position. The Vacuuminator should repeatedly scan for and clean up dirt found from its current position according to the rules in Task 3. It should continue to do so as long as it finds new dirt from its current position. We will call this a cleaning cycle.
 
